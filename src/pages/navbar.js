@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Logo from "../assets/logo.png";
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -11,7 +12,7 @@ import {
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 
-class NavbarPage extends Component {
+class Narbar extends Component {
   constructor() {
     super();
     this.state = {
@@ -26,33 +27,31 @@ class NavbarPage extends Component {
   render() {
     return (
       <Router>
-        <MDBNavbar color="unique-color-dark" dark expand="md">
+        <MDBNavbar
+          className="justify-content-center"
+          color="unique-color-dark"
+          dark
+          expand="md"
+        >
           <MDBNavbarBrand>
-            <strong className="white-text">Navbar</strong>
+            <strong>
+              <img src={Logo} alt="blue mr logo png"></img>
+            </strong>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-            <MDBNavbarNav left>
+            <MDBNavbarNav Right>
               <MDBNavItem active>
                 <MDBNavLink to="#!">Home</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">Features</MDBNavLink>
+                <MDBNavLink to="#!">Profile</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">Pricing</MDBNavLink>
-              </MDBNavItem>
-            </MDBNavbarNav>
-            <MDBNavbarNav right>
-              <MDBNavItem>
-                <MDBNavLink className="waves-effect waves-light" to="#!">
-                  <MDBIcon fab icon="twitter" />
-                </MDBNavLink>
+                <MDBNavLink to="#!">Portfolio</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink className="waves-effect waves-light" to="#!">
-                  <MDBIcon fab icon="google-plus-g" />
-                </MDBNavLink>
+                <MDBNavLink to="#!">Contact</MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>
@@ -62,4 +61,4 @@ class NavbarPage extends Component {
   }
 }
 
-export default NavbarPage;
+export default Narbar;

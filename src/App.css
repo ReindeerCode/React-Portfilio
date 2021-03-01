@@ -1,4 +1,10 @@
-h1 {
+
+* {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* h1 {
   font-family: "Montserrat";
   text-align: center;
 }
@@ -14,4 +20,4 @@ video {
   position: fixed;
   top: 0;
   left: 0;
-}
+} */
