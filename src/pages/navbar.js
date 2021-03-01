@@ -13,18 +13,20 @@ import {
 import { BrowserRouter as Router } from "react-router-dom";
 
 class Narbar extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       isOpen: false,
     };
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  toggleCollapse(argument_id_needed) {
-    this.setState({ isOpen: !this.state.isOpen });
+  toggleMenu() {
+    this.setState({ menu: !this.state.menu });
   }
 
   render() {
+    const show = this.state.menu ? "show" : "";
     return (
       <Router>
         <MDBNavbar
@@ -38,8 +40,13 @@ class Narbar extends Component {
               <img src={Logo} alt="blue mr logo png"></img>
             </strong>
           </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={this.toggleCollapse} />
-          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+          <MDBNavbarToggler onClick={this.toggleMenu} />
+          <MDBCollapse
+            className={"collapse navbar-collapse " + show}
+            id="navbarCollapse3"
+            isOpen={this.state.isOpen}
+            navbar
+          >
             <MDBNavbarNav Right>
               <MDBNavItem active>
                 <MDBNavLink to="#!">Home</MDBNavLink>
