@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import Logo from "../assets/logo.png";
+// import Logo from "../assets/logo.png";
 import {
   MDBNavbar,
-  MDBNavbarBrand,
+  // MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
-  MDBIcon,
+  // MDBIcon,
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
