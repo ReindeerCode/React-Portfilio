@@ -23,7 +23,7 @@ React is one of the most powerful JavaScript libraries for building user interfa
 
 ## Installation Instructions: 
 No installation needed to view the site!
-To build your own start a new React project. Copy my package.json file and then run npm i in your terminal to get the following technologies: React, React Font-Awesome, React MDBootstrap, React Typed, React Particles, 
+To build your own start a new React project. Copy my package.json file and then run npm i in your terminal. Then have fun!
 
 
 ## Test Command: 

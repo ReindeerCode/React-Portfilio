@@ -4,6 +4,9 @@
   text-transform: capitalize;
   color: whitesmoke;
 }
+body {
+  background-color: black;
+}
 /*** ------------- Navbar component ----------------------*/
 .nav-z-index {
   z-index: 2;
@@ -50,10 +53,10 @@
   backdrop-filter: drop-shadow(4px 4px 10px blue);
 }
 
-.dark-text,
+/* .dark-text,
 td {
   color: black;
-}
+} */
 
 /*** ------------ End Jumbotron component ---------------------*/
 /*** ------------- Typed Text --------------------------------*/
@@ -89,6 +92,8 @@ td {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20%;
+  /* border: 1px solid black; */
 }
 .profile-wrapper {
   position: relative;
@@ -97,6 +102,50 @@ td {
   background-position: center;
   z-index: -1;
   height: 100vh;
+}
+/*** ----------------- End Profile ---------------------------*/
+
+/*** ----------------- Profile --------------------------------*/
+.portfolio {
+  background-image: url(./assets/projects_background.jpg);
+  background-size: cover;
+  background-color: black;
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.portfolio h1 {
+  color: orange;
+  padding: 3rem 0;
+}
+
+.portfolio-content {
+  text-align: center;
+  max-width: 53.125rem;
+  margin: 0 auto 2rem auto;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.myCarousel {
+  color: whitesmoke;
+  background: transparent;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 17.875rem;
+}
+
+.carousel .slide img {
+  height: 30rem !important;
+  width: 45rem !important;
+  padding-top: 6%;
 }
 /*** ----------------- End Profile ---------------------------*/
 
@@ -110,6 +159,12 @@ td {
     font-size: 3rem;
     color: orange;
     font-weight: bold;
+  }
+
+  .carousel .slide img {
+    height: 6rem !important;
+    width: 10rem !important;
+    padding-top: 6%;
   }
 }
 /*** ----------------- End Responsive ------------------*/

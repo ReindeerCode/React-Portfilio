@@ -11,10 +11,7 @@ import {
   MDBCollapse,
   // MDBIcon,
 } from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import AppContext from '../../context/appContext'
-import { Link, animateScroll as scroll } from "react-scroll";
+
 
 class Narbar extends Component {
   constructor(props) {
@@ -69,7 +66,7 @@ class Narbar extends Component {
             </MDBNavItem>
             {/* add active highlight after setting up context by putting active={activePath === "/portfolio"} in the following <MDBNavItem> tag*/}
             <MDBNavItem>
-              <MDBNavLink smooth={true} to="#!">
+              <MDBNavLink smooth={true} to="/portfolio">
                 Portfolio
               </MDBNavLink>
             </MDBNavItem>

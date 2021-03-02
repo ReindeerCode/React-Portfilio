@@ -7,12 +7,8 @@ const ProfilePage = () => {
   return (
     <MDBContainer>
       <MDBRow>
-        <MDBCol col-lg-6 col-sm-12>
-          <img
-            className="headShot align-beginning"
-            src={Headshot}
-            alt="my headshot"
-          />
+        <MDBCol col-lg-6 col-sm-12 d-flex justify-content-center>
+          <img className="headShot " src={Headshot} alt="my headshot" />
         </MDBCol>
         <MDBCol col-lg-6 col-sm-12>
           <h1 className="dark-text">Profile</h1>
