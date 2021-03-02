@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import { Link } from "react-router-dom";
 // import Logo from "../assets/logo.png";
 import {
   MDBNavbar,
@@ -13,6 +14,7 @@ import {
 import { BrowserRouter as Router } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import AppContext from '../../context/appContext'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Narbar extends Component {
   constructor(props) {
@@ -31,48 +33,55 @@ class Narbar extends Component {
     const show = this.state.menu ? "show" : "";
     // const { activePath } = appContext
     return (
-      <Router>
-        <MDBNavbar
-          className="nav-z-index"
-          justify-content-center
-          color="unique-color-dark"
-          dark
-          expand="md"
-        >
-          {/* <MDBNavbarBrand>
+      <MDBNavbar
+        className="nav-z-index"
+        justify-content-center
+        fixed-bottom
+        color="unique-color-dark"
+        dark
+        expand="md"
+      >
+        {/* <MDBNavbarBrand>
             <strong>
               <img src={Logo} alt="blue mr logo png"></img>
             </strong>
           </MDBNavbarBrand> */}
-          <MDBNavbarToggler onClick={this.toggleMenu} />
-          <MDBCollapse
-            className={"collapse navbar-collapse " + show}
-            id="navbarCollapse3"
-            isOpen={this.state.isOpen}
-            navbar
-          >
-            <MDBNavbarNav Right>
-              {/* https://mdbootstrap.com/support/react/how-to-change-mdnavbar-item-to-active-dynamically/ */}
-              {/* add active highlight after setting up context by putting active={activePath === "/home"} in the following <MDBNavItem> tag*/}
-              <MDBNavItem>
-                <MDBNavLink to="#!">Home</MDBNavLink>
-              </MDBNavItem>
-              {/* add active highlight after setting up context by putting active={activePath === "/profile"} in the following <MDBNavItem> tag*/}
-              <MDBNavItem>
-                <MDBNavLink to="#!">Profile</MDBNavLink>
-              </MDBNavItem>
-              {/* add active highlight after setting up context by putting active={activePath === "/portfolio"} in the following <MDBNavItem> tag*/}
-              <MDBNavItem>
-                <MDBNavLink to="#!">Portfolio</MDBNavLink>
-              </MDBNavItem>
-              {/* add active highlight after setting up context by putting active={activePath === "/contact"} in the following <MDBNavItem> tag*/}
-              <MDBNavItem>
-                <MDBNavLink to="#!">Contact</MDBNavLink>
-              </MDBNavItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBNavbar>
-      </Router>
+        <MDBNavbarToggler onClick={this.toggleMenu} />
+        <MDBCollapse
+          className={"collapse navbar-collapse " + show}
+          id="navbarCollapse3"
+          isOpen={this.state.isOpen}
+          navbar
+        >
+          <MDBNavbarNav Right>
+            {/* https://mdbootstrap.com/support/react/how-to-change-mdnavbar-item-to-active-dynamically/ */}
+            {/* add active highlight after setting up context by putting active={activePath === "/home"} in the following <MDBNavItem> tag*/}
+            <MDBNavItem>
+              <MDBNavLink smooth={true} to="/">
+                Home
+              </MDBNavLink>
+            </MDBNavItem>
+            {/* add active highlight after setting up context by putting active={activePath === "/profile"} in the following <MDBNavItem> tag*/}
+            <MDBNavItem>
+              <MDBNavLink smooth={true} to="/profile">
+                Profile
+              </MDBNavLink>
+            </MDBNavItem>
+            {/* add active highlight after setting up context by putting active={activePath === "/portfolio"} in the following <MDBNavItem> tag*/}
+            <MDBNavItem>
+              <MDBNavLink smooth={true} to="#!">
+                Portfolio
+              </MDBNavLink>
+            </MDBNavItem>
+            {/* add active highlight after setting up context by putting active={activePath === "/contact"} in the following <MDBNavItem> tag*/}
+            <MDBNavItem>
+              <MDBNavLink smooth={true} to="#!">
+                Contact
+              </MDBNavLink>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
     );
   }
 }

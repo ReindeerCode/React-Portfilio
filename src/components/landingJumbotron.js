@@ -3,11 +3,10 @@ import Typed from "react-typed";
 import ContactBTN from "./contactBTN";
 import { MDBJumbotron, MDBContainer } from "mdbreact";
 
-const WelcomeJumbotron = () => {
+const LandingJumbotron = () => {
   return (
     <MDBJumbotron fluid className="transparent">
       <MDBContainer>
-        
         <h1 className="display-1">Welcome!</h1>
 
         <Typed
@@ -28,4 +27,4 @@ const WelcomeJumbotron = () => {
   );
 };
 
-export default WelcomeJumbotron;
+export default LandingJumbotron;

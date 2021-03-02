@@ -1,37 +1,21 @@
 import "./App.css";
 import Navbar from "./components/navbar";
-import Landing from "./pages/landing";
-import Profile from "./pages/profile";
-import Particles from "react-particles-js";
+import Landing from "./pages/landingPage";
+import Profile from "./pages/profilePage";
 import Footer from "./components/footer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function App() {
   return (
-    <>
-      <Particles
-        className="particles-canvas"
-        params={{
-          particles: {
-            number: {
-              value: 30,
-              density: {
-                enable: true,
-                value_area: 900,
-              },
-            },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 6,
-              },
-            },
-          },
-        }}
-      />
+    <Router>
       <Navbar />
-      <Landing />
-      <Profile />
-    </>
+      <Switch>
+        <Route path="/" exact component={Landing} />
+        <Route path="/profile" component={Profile} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

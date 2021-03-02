@@ -12,12 +12,11 @@
 
 /*** ------------- Landing Page --------------------------*/
 .landing-wrapper {
-  position: absolute;
+  position: relative;
   background: url(./assets/landing.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: fill;
-  width: stretch;
+  height: 100vh;
 }
 
 .main-info {
@@ -51,6 +50,11 @@
   backdrop-filter: drop-shadow(4px 4px 10px blue);
 }
 
+.dark-text,
+td {
+  color: black;
+}
+
 /*** ------------ End Jumbotron component ---------------------*/
 /*** ------------- Typed Text --------------------------------*/
 
@@ -80,11 +84,19 @@
 /*** ----------------- Profile --------------------------------*/
 .headShot {
   border-radius: 50%;
-  height: 125px;
+  height: auto;
   width: auto;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+.profile-wrapper {
+  position: relative;
+  background: url(./assets/portfolio.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  height: 100vh;
 }
 /*** ----------------- End Profile ---------------------------*/
 
