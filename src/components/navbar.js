@@ -11,6 +11,8 @@ import {
   MDBIcon,
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import AppContext from '../../context/appContext'
 
 class Narbar extends Component {
   constructor(props) {
@@ -27,19 +29,21 @@ class Narbar extends Component {
 
   render() {
     const show = this.state.menu ? "show" : "";
+    // const { activePath } = appContext
     return (
       <Router>
         <MDBNavbar
-          className="justify-content-center"
+          className="nav-z-index"
+          justify-content-center
           color="unique-color-dark"
           dark
           expand="md"
         >
-          <MDBNavbarBrand>
+          {/* <MDBNavbarBrand>
             <strong>
               <img src={Logo} alt="blue mr logo png"></img>
             </strong>
-          </MDBNavbarBrand>
+          </MDBNavbarBrand> */}
           <MDBNavbarToggler onClick={this.toggleMenu} />
           <MDBCollapse
             className={"collapse navbar-collapse " + show}
@@ -48,15 +52,20 @@ class Narbar extends Component {
             navbar
           >
             <MDBNavbarNav Right>
-              <MDBNavItem active>
+              {/* https://mdbootstrap.com/support/react/how-to-change-mdnavbar-item-to-active-dynamically/ */}
+              {/* add active highlight after setting up context by putting active={activePath === "/home"} in the following <MDBNavItem> tag*/}
+              <MDBNavItem>
                 <MDBNavLink to="#!">Home</MDBNavLink>
               </MDBNavItem>
+              {/* add active highlight after setting up context by putting active={activePath === "/profile"} in the following <MDBNavItem> tag*/}
               <MDBNavItem>
                 <MDBNavLink to="#!">Profile</MDBNavLink>
               </MDBNavItem>
+              {/* add active highlight after setting up context by putting active={activePath === "/portfolio"} in the following <MDBNavItem> tag*/}
               <MDBNavItem>
                 <MDBNavLink to="#!">Portfolio</MDBNavLink>
               </MDBNavItem>
+              {/* add active highlight after setting up context by putting active={activePath === "/contact"} in the following <MDBNavItem> tag*/}
               <MDBNavItem>
                 <MDBNavLink to="#!">Contact</MDBNavLink>
               </MDBNavItem>

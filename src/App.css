@@ -1,23 +1,90 @@
 * {
   font-family: "Barlow Condensed", sans-serif;
   font-family: "Montserrat Alternates", sans-serif;
-  /* font-weight: 300 !important; */
+  text-transform: capitalize;
+  color: whitesmoke;
+}
+/*** ------------- Navbar component ------------------*/
+.nav-z-index {
+  z-index: 2;
+}
+/*** ------------- End Navbar component ------------------*/
+
+/*** ------------- Landing Page ------------------*/
+.landing-wrapper {
+  position: absolute;
+  background: url(./assets/landing.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: fill;
+  width: stretch;
 }
 
-/* h1 {
-  font-family: "Montserrat";
-  text-align: center;
-}
-
-.s1 {
-  background: url(./assets/welcomeTyping.mov);
-}
-
-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
+.main-info {
+  display: flex;
+  position: absolute;
   top: 0;
   left: 0;
-} */
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+/*** ------------ End Landing Page ---------------*/
+
+/*** ------------ Jumbotron component ---------------*/
+.display-1 {
+  color: orange;
+  font-weight: bold;
+}
+
+.transparent {
+  background-color: transparent;
+  backdrop-filter: opacity(20%);
+  backdrop-filter: blur(2px);
+  backdrop-filter: brightness(60%);
+  backdrop-filter: contrast(40%);
+  backdrop-filter: drop-shadow(4px 4px 10px blue);
+}
+
+/*** ------------ End Jumbotron component ---------------*/
+/*** ------------- Typed Text ------------------*/
+
+.typed-text {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/*** ------------ End Typed Text ---------------*/
+
+/*** ----------------- contactBTN component ------------------*/
+.hover-text {
+  color: whitesmoke !important;
+  border: 1px solid orange;
+}
+/*** ------------ End contactBTN component  -------------------*/
+
+/*** ----------------- Particles ------------------*/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+/*** ------------ End Particles  -------------------*/
+
+@media (max-width: 768px) {
+  .typed-text {
+    font-size: 1.1rem;
+    color: white;
+  }
+  .display-1 {
+    font-size: 3rem;
+    color: orange;
+    font-weight: bold;
+  }
+}
