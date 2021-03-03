@@ -9,11 +9,11 @@ import {
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
+  MDBSmoothScroll,
   // MDBIcon,
 } from "mdbreact";
 
-
-class Narbar extends Component {
+class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,7 +33,7 @@ class Narbar extends Component {
       <MDBNavbar
         className="nav-z-index"
         justify-content-center
-        fixed-bottom
+        sticky-top
         color="unique-color-dark"
         dark
         expand="md"
@@ -83,4 +83,4 @@ class Narbar extends Component {
   }
 }
 
-export default Narbar;
+export default Navbar;

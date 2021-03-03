@@ -125,11 +125,11 @@ td {
   text-align: center;
   max-width: 53.125rem;
   margin: 0 auto 2rem auto;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .myCarousel {
-  color: whitesmoke;
+  color: black;
   background: transparent;
   margin-top: -6%;
   width: 54%;
@@ -147,8 +147,44 @@ td {
   width: 45rem !important;
   padding-top: 6%;
 }
+
+.carousel .slide {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  height: 100% !important;
+}
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
 /*** ----------------- End Profile ---------------------------*/
 
+/** start scroll bar  */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  background-color: #666;
+}
+::-webkit-scrollbar-track {
+  background-color: #646464;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #666;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+  background-color: #646464;
+}
+::-webkit-resizer {
+  background-color: #666;
+}
+/** end scroll bar  */
 /*** ----------------- Responsive  ---------------------------*/
 @media (max-width: 768px) {
   .typed-text {
