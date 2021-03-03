@@ -8,6 +8,12 @@ import workout_dashboard from "../assets/workout_dashboard.png";
 import hydro_reviews from "../assets/hydro_reviews.png";
 import note_taker from "../assets/note_taker.png";
 import weather_dashboard from "../assets/weather_dashboard.png";
+import { MDBRow, MDBCol, MDBContainer, MDBBtn } from "mdbreact";
+
+const openSiteNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
 
 const PortfolioCarousel = () => {
   return (
@@ -20,6 +26,37 @@ const PortfolioCarousel = () => {
       interval={3000}
     >
       <>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://new-react-employee-directory.herokuapp.com/"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                Deployed Site
+              </MDBBtn>
+            </MDBCol>
+
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://github.com/ReindeerCode/React-Employee-Directory"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                GitHub Repo
+              </MDBBtn>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
         <img src={employee_direct} alt="employee directory home page" />
         <div className="myCarousel">
           <h3>React Employee Directory</h3>
@@ -30,7 +67,39 @@ const PortfolioCarousel = () => {
           </p>
         </div>
       </>
+
       <>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://pwa-budget-tracker-indexed.herokuapp.com/"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                Deployed Site
+              </MDBBtn>
+            </MDBCol>
+
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://github.com/ReindeerCode/PWA-Online-Offline-Budget-Tracker"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                GitHub Repo
+              </MDBBtn>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
         <img src={budget_dashboard} alt="budget dashboard page" />
         <div className="myCarousel">
           <h3>Progressive Web App Budget Tracker</h3>
@@ -40,7 +109,39 @@ const PortfolioCarousel = () => {
           </p>
         </div>
       </>
+
       <>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://fit-workout-tracker.herokuapp.com/stats"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                Deployed Site
+              </MDBBtn>
+            </MDBCol>
+
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://github.com/ReindeerCode/Workout-Tracker"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                GitHub Repo
+              </MDBBtn>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
         <img src={workout_dashboard} alt="workout dashboard page" />
         <div className="myCarousel">
           <h3>Mongo and Mongoose Workout Tracker</h3>
@@ -51,6 +152,35 @@ const PortfolioCarousel = () => {
         </div>
       </>
       <>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://hydro-homies.herokuapp.com/index.html"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                Deployed Site
+              </MDBBtn>
+            </MDBCol>
+
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab("https://github.com/ReindeerCode/hydrohomies")
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                GitHub Repo
+              </MDBBtn>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
         <img src={hydro_reviews} alt="hydro homies reviews page" />
         <div className="myCarousel">
           <h3>Team project - Hydrohomies</h3>
@@ -63,6 +193,37 @@ const PortfolioCarousel = () => {
         </div>
       </>
       <>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://new-express-note-taker.herokuapp.com/"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                Deployed Site
+              </MDBBtn>
+            </MDBCol>
+
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://github.com/ReindeerCode/Express-Note-Taker"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                GitHub Repo
+              </MDBBtn>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
         <img src={note_taker} alt="express note taker home page" />
         <div className="myCarousel">
           <h3>Express Note Taker</h3>
@@ -74,6 +235,37 @@ const PortfolioCarousel = () => {
         </div>
       </>
       <>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://reindeercode.github.io/Server-Side-APIs-Weather-Dashboard/"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                Deployed Site
+              </MDBBtn>
+            </MDBCol>
+
+            <MDBCol md="6">
+              <MDBBtn
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://github.com/ReindeerCode/Server-Side-APIs-Weather-Dashboard"
+                  )
+                }
+                className="hover-text mt-5"
+                color="unique-color-dark"
+              >
+                GitHub Repo
+              </MDBBtn>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
         <img src={weather_dashboard} alt="weather dashboard home page" />
         <div className="myCarousel">
           <h3>Server-Side APIs Weather Dashboard</h3>
