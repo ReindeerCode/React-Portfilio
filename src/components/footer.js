@@ -26,7 +26,7 @@ const Footer = () => {
             <p>
               I am extremely excited to take the leap into programming and I
               love talking about it. Please feel free to reach out to me anytime
-              through any of the these links.
+              through any of these icon links.
             </p>
           </MDBCol>
           <MDBCol md="2" sm="4">
