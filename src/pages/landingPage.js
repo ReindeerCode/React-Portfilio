@@ -6,6 +6,11 @@ import Footer from "../components/footer";
 
 import { MDBContainer } from "mdbreact";
 
+const openSiteNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
 const Landing = () => {
   return (
     <>
@@ -51,8 +56,9 @@ const Landing = () => {
           <button
             className="btn-main-offer contact-btn1 btn btn-outline-warning"
             type="submit"
+            onClick={() => openSiteNewTab("https://github.com/ReindeerCode")}
           >
-            contact me
+            github Projects
           </button>
         </div>
       </div>

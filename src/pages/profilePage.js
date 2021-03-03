@@ -11,7 +11,7 @@ const ProfilePage = () => {
       <Navbar />
       <MDBContainer>
         <MDBRow id="profile">
-          <MDBCol col-lg-6 col-sm-12 d-flex justify-content-center>
+          <MDBCol col-lg-6 col-sm-12>
             <img className="headShot " src={Headshot} alt="my headshot" />
           </MDBCol>
           <MDBCol col-lg-6 col-sm-12>

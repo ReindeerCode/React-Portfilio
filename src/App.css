@@ -72,18 +72,11 @@ td {
 /*** ----------------- contactBTN component ------------------*/
 
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
-  text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-white);
   margin: 2rem;
 }
 
-.btn-main-offer:hover {
-  text-decoration: none;
-  transition: 0.2s ease-in-out !important;
-}
 .contact-btn1 {
   margin: 1rem 0 0 0;
 
@@ -245,9 +238,29 @@ input.form-control {
 textarea.form-control {
   margin: -0.3rem 0;
 }
+
+.error-message {
+  color: orange;
+  /* background: orange; */
+  text-align: left;
+}
+
+.success-message {
+  color: green;
+
+  /* background: orange; */
+  text-align: left;
+}
 /*** ----------------- End Contact ---------------------------*/
 
-/** start scroll bar  */
+/*** ----------------- Navbar --------------------------------*/
+.fontA-icons {
+  margin: 2% !important;
+}
+
+/*** ----------------- End Navbar ---------------------------*/
+
+/** -------------start scroll bar -------------------------- */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -273,7 +286,8 @@ textarea.form-control {
 ::-webkit-resizer {
   background-color: #666;
 }
-/** end scroll bar  */
+/** ---------------- End scroll bar -------------------------- */
+
 /*** ----------------- Responsive  ---------------------------*/
 @media (max-width: 768px) {
   .typed-text {

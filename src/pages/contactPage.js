@@ -35,7 +35,7 @@ const Contact = () => {
       .send(serviceID, templateID, variables, userID)
       .then(() => {
         setSuccessMessage(
-          "Form sent successfully! I'll contact you as soon as possible."
+          "Email sent successfully! I look forward to chatting with you."
         );
       })
       .catch((err) => console.error(`Something went wrong ${err}`));
@@ -105,7 +105,7 @@ const Contact = () => {
                     placeholder="Email"
                     name="email"
                     ref={register({
-                      required: "Please provide you email",
+                      required: "Please provide your email",
                       pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                         message: "invalid Email",
@@ -125,7 +125,7 @@ const Contact = () => {
                     placeholder="Subject"
                     name="subject"
                     ref={register({
-                      required: "OOPS, you forget to add the subject.",
+                      required: "OOPS, please add a subject",
                     })}
                   />
                   <div className="line"></div>

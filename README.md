@@ -44,23 +44,20 @@ Screen shots to come -
 
 Following screen shot is of the landing page
 
-![Project Screenshot](./src/assets/tbd.png)
+![Project Screenshot](./src/assets/landingPage.png)
 
-Following screen shot is of the biography page
+Following screen shot is of the profile page
 
-![Project Screenshot](./src/assets/tbd.png)
+![Project Screenshot](./src/assets/profilePage.png)
 
 Following screen shot is of the portfolio page
 
-![Project Screenshot](./src/assets/tbd.png)
+![Project Screenshot](./src/assets/portfolioPage.png)
 
 Following screen shot is of the contact page
 
-![Project Screenshot](./src/assets/tbd.png)
+![Project Screenshot](./src/assets/contactPage.png)
 
-Following screen shot is of easter egg youtube modal
-
-![Project Screenshot](./src/assets/tbd.png)
 
 
 
