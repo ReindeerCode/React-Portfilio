@@ -24,7 +24,7 @@ const PortfolioCarousel = () => {
       showThumbs={false}
       showStatus={false}
       autoPlay={true}
-      interval={3000}
+      interval={7000}
     >
       <>
         <MDBContainer>
