@@ -20,21 +20,22 @@ const ProfilePage = () => {
               What you need to know is that I love hiking and dogs. Also, for
               almost a decade I worked in manufacturing sales and project
               management. About a year ago I decided to move on and find
-              something new, but what I didn't know. I knew I still wanted to
+              something new, but what, I didn't know. I knew I still wanted to
               work with people and be creative - I was surprised when
               programming kept coming up during my Google searches.
             </p>
             <p className="dark-text">
               At first I thought programmers sat in a dark room alone to work -
-              I was surprised how important team work is to being a successful
+              I was surprised how important teamwork is to being a successful
               programmer. I was also surprised at how creative a programmer can
-              be. I learned that it isn't all black and white and that with
-              programming you can create almost anything you can think of.
+              be. I learned that it isn't all black and white, and that with
+              programming, you can create almost anything you can think of.
             </p>
             <p className="dark-text">
-              The more I read the more interested I became. After researching
-              schools I decided UNH was the place for me and I haven't regretted
-              it once since writing my first line of code, "HELLO WORLD!"
+              The more I read, the more interested I became. After researching
+              schools, I decided UNH was the place for me and I haven't
+              regretted it once since writing my first line of code, "HELLO
+              WORLD!"
             </p>
           </MDBCol>
         </MDBRow>

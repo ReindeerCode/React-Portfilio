@@ -9,7 +9,6 @@ import hydro_reviews from "../assets/hydro_reviews.png";
 import note_taker from "../assets/note_taker.png";
 import weather_dashboard from "../assets/weather_dashboard.png";
 import { MDBRow, MDBCol, MDBContainer, button } from "mdbreact";
-import { Button } from "react-scroll";
 
 const openSiteNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -188,7 +187,7 @@ const PortfolioCarousel = () => {
           <p>
             Love drinking liquids? Why not let other people know what you like
             and don't like about different brands of things you've gulped down?
-            As a team of 5 we developed this Twitter like website that uses AJAX
+            As a team of 5 we developed this Twitter-like website that uses AJAX
             requests, MDBootstrap, and jQuery.
           </p>
         </div>

@@ -109,14 +109,14 @@ td {
   margin-top: 20%;
   /* border: 1px solid black; */
 }
-.profile-wrapper {
+/* .profile-wrapper {
   position: relative;
   background: url(./assets/portfolio.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
   height: 100vh;
-}
+} */
 /*** ----------------- End Profile ---------------------------*/
 
 /*** ----------------- Profile --------------------------------*/
@@ -299,10 +299,16 @@ textarea.form-control {
     color: orange;
     /* font-weight: bold; */
   }
+  h3 {
+    font-size: 1.1rem;
+  }
 
+  p {
+    font-size: 0.8rem;
+  }
   .carousel .slide img {
-    height: 6rem !important;
-    width: 10rem !important;
+    height: 12rem !important;
+    width: 16rem !important;
     padding-top: 6%;
   }
   .contact .container {
@@ -311,5 +317,20 @@ textarea.form-control {
   .contact p {
     padding: 0 1rem;
   }
+  .main-info {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+  }
 }
+
 /*** ----------------- End Responsive ------------------*/
