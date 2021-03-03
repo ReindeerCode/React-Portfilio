@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import ContactBTN from "../components/contactBTN";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 
@@ -43,7 +39,6 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
       <div id="contact" className="contact">
         <div className="text-center">
           <h1 className="display-1">
@@ -162,7 +157,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

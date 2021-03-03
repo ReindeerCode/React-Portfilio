@@ -1,8 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
 import Typed from "react-typed";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 
 import { MDBContainer } from "mdbreact";
 
@@ -14,7 +12,6 @@ const openSiteNewTab = (url) => {
 const Landing = () => {
   return (
     <>
-      <Navbar />
       <Particles
         className="particles-canvas"
         id="landing"
@@ -62,7 +59,6 @@ const Landing = () => {
           </button>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

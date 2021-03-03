@@ -31,7 +31,7 @@ class Navbar extends Component {
     // const { activePath } = appContext
     return (
       <MDBNavbar
-        className="nav-z-index"
+        className="nav-z-index sticky-top"
         color="unique-color-dark"
         dark
         expand="md"

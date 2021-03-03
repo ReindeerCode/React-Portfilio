@@ -28,12 +28,13 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 30rem;
+  bottom: 28rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 2;
+  /* z-index: 2; */
+
   /* background-color: rgba(0, 0, 0, 0.7); */
 }
 

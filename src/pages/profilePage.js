@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import { MDBContainer, MDBRow, MDBCol, MDBTable, MDBTableBody } from "mdbreact";
 
 import Headshot from "../assets/Headshot.png";
@@ -8,7 +6,6 @@ import Headshot from "../assets/Headshot.png";
 const ProfilePage = () => {
   return (
     <>
-      <Navbar />
       <MDBContainer>
         <MDBRow id="profile">
           <MDBCol col-lg-6 col-sm-12>
@@ -73,7 +70,6 @@ const ProfilePage = () => {
           </MDBTable>
         </MDBRow>
       </MDBContainer>
-      <Footer />
     </>
   );
 };

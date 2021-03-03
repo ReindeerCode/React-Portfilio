@@ -8,11 +8,19 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
+const openSiteNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
 const Footer = () => {
   return (
-    <MDBFooter color="unique-color-dark" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
+    <MDBFooter
+      color="unique-color-dark"
+      className=" text-center sticky-bottom font-small pt-4 "
+    >
+      <MDBContainer fluid className="text-center ">
+        <MDBRow classname="d-flex justify-content-center">
           <MDBCol md="6">
             <h5 className="title">Thanks for coming!</h5>
             <p>
@@ -21,39 +29,54 @@ const Footer = () => {
               through any of the these links.
             </p>
           </MDBCol>
-          <MDBCol md="4">
-            <h5 className="title">Links</h5>
-            <ul>
-              <li className="list-unstyled fontA-icons">
-                <a href="https://github.com/ReindeerCode" target="_blank">
-                  <FontAwesomeIcon
-                    className="fontA-icons"
-                    icon={faGithub}
-                    size="4x"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/a-michael-rudolph/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    className="fontA-icons"
-                    icon={faLinkedin}
-                    size="4x"
-                  />
-                </a>
-                <a
-                  href="https://www.facebook.com/michael.rudolph.3939/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    className="fontA-icons"
-                    icon={faFacebook}
-                    size="4x"
-                  />
-                </a>
-              </li>
-            </ul>
+          <MDBCol md="2" sm="4">
+            <div className="list-unstyled fontA-icons">
+              <href
+                onClick={() =>
+                  openSiteNewTab("https://github.com/ReindeerCode")
+                }
+              >
+                <FontAwesomeIcon
+                  className="fontA-icons"
+                  icon={faGithub}
+                  size="4x"
+                />
+              </href>
+            </div>
+          </MDBCol>
+          <MDBCol md="2" sm="4">
+            <div className="list-unstyled fontA-icons">
+              <href
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://www.linkedin.com/in/a-michael-rudolph/"
+                  )
+                }
+              >
+                <FontAwesomeIcon
+                  className="fontA-icons"
+                  icon={faLinkedin}
+                  size="4x"
+                />
+              </href>
+            </div>
+          </MDBCol>
+          <MDBCol md="2" sm="4">
+            <div className="list-unstyled fontA-icons">
+              <href
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://www.facebook.com/michael.rudolph.3939/"
+                  )
+                }
+              >
+                <FontAwesomeIcon
+                  className="fontA-icons"
+                  icon={faFacebook}
+                  size="4x"
+                />
+              </href>
+            </div>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
