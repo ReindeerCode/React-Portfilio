@@ -41,7 +41,7 @@ body {
 /*** ------------ Jumbotron component ------------------------*/
 .display-1 {
   color: orange;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .transparent {
@@ -158,6 +158,74 @@ td {
 }
 /*** ----------------- End Profile ---------------------------*/
 
+/*** ----------------- Contact -------------------------------*/
+.contact {
+  background: black;
+  padding: 3rem 0;
+}
+
+.contact h1 {
+  padding: 1.3rem 0;
+}
+
+.contact p {
+  font-size: 1.2rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid #eee;
+  border-radius: 0;
+  color: orange;
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contact .container {
+  padding: 4rem 0;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  background: transparent;
+  color: orange;
+  border-bottom: 0.125rem solid #eee;
+}
+.contact textarea {
+  height: 12.2rem !important;
+}
+
+.line {
+  position: relative;
+  width: 0;
+  height: 0.125rem;
+  top: -0.8rem;
+  background: orange;
+  display: inline-block;
+}
+
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+/*** ----------------- End Contact ---------------------------*/
+
 /** start scroll bar  */
 
 ::-webkit-scrollbar {
@@ -194,13 +262,19 @@ td {
   .display-1 {
     font-size: 3rem;
     color: orange;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 
   .carousel .slide img {
     height: 6rem !important;
     width: 10rem !important;
     padding-top: 6%;
+  }
+  .contact .container {
+    padding: 0 1rem;
+  }
+  .contact p {
+    padding: 0 1rem;
   }
 }
 /*** ----------------- End Responsive ------------------*/

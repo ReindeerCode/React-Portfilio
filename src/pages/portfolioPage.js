@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import { MDBContainer, MDBRow, MDBCol, MDBTable, MDBTableBody } from "mdbreact";
+import { MDBContainer } from "mdbreact";
 import PortfolioCarousel from "../components/portfolioCarousel";
 
 const Portfolio = () => {
