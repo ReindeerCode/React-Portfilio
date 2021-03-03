@@ -321,15 +321,15 @@ textarea.form-control {
   .main-info {
     display: flex;
     position: absolute;
-    top: 0;
+    top: 5%;
     left: 0;
     right: 0;
-    bottom: 0rem;
+    bottom: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 2;
+    /* z-index: 2; */
     /* background-color: rgba(0, 0, 0, 0.7); */
   }
 }
