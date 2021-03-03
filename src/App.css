@@ -1,7 +1,7 @@
 * {
   font-family: "Barlow Condensed", sans-serif;
   font-family: "Montserrat Alternates", sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: whitesmoke;
 }
 body {
