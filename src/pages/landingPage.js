@@ -3,7 +3,7 @@ import Particles from "react-particles-js";
 import Typed from "react-typed";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import ContactBTN from "../components/contactBTN";
+
 import { MDBContainer } from "mdbreact";
 
 const Landing = () => {
@@ -48,7 +48,12 @@ const Landing = () => {
               loop
             />
           </MDBContainer>
-          <ContactBTN />
+          <button
+            className="btn-main-offer contact-btn1 btn btn-outline-warning"
+            type="submit"
+          >
+            contact me
+          </button>
         </div>
       </div>
       <Footer />

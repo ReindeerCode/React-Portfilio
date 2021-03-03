@@ -70,9 +70,29 @@ td {
 /*** ------------ End Typed Text -----------------------------*/
 
 /*** ----------------- contactBTN component ------------------*/
-.hover-text {
-  color: whitesmoke !important;
-  border: 1px solid orange;
+
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  transition: 0.2s ease-in-out !important;
+}
+.contact-btn1 {
+  margin: 1rem 0 0 0;
+
+  background: none;
+}
+.contact-btn2 {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
 }
 /*** ------------ End contactBTN component  -------------------*/
 
