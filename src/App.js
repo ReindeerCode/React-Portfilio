@@ -1,10 +1,11 @@
 import "./App.css";
-import Landing from "./pages/landingPage";
+
 import Profile from "./pages/profilePage";
 import Portfolio from "./pages/portfolioPage";
 import Contact from "./pages/contactPage";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Master from "./pages/masterPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/" exact component={Landing} />
+        <Route path="/" exact component={Master} />
         <Route path="/profile" component={Profile} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />

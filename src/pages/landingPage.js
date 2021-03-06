@@ -55,7 +55,7 @@ const Landing = () => {
             type="submit"
             onClick={() => openSiteNewTab("https://github.com/ReindeerCode")}
           >
-            github Projects
+            Github Projects
           </button>
         </div>
       </div>

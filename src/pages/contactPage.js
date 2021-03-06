@@ -39,8 +39,9 @@ const Contact = () => {
 
   return (
     <>
-      <div id="contact" className="contact">
-        <div className="text-center">
+      <div className="contact video-container">
+        <video src="/contactVid.mp4" autoPlay loop muted />
+        <div id="contact" className="text-center">
           <h1 className="display-1">
             contact me
             <span className="typed-text">@ MJRudolph86@gmail.com</span>

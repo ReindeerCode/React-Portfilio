@@ -5,10 +5,10 @@ import PortfolioCarousel from "../components/portfolioCarousel";
 const Portfolio = () => {
   return (
     <>
-      <div className="portfolio">
+      <div id="portfolio" className="portfolio">
         <h1 className="display-1">My Projects</h1>
         <MDBContainer>
-          <div className="portfolio-content"></div>
+          {/* <div className="portfolio-content"></div> */}
           <PortfolioCarousel />
         </MDBContainer>
       </div>

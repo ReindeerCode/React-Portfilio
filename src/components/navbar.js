@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-
+import { HashLink as Link } from "react-router-hash-link";
 // import Logo from "../assets/logo.png";
 import {
   MDBNavbar,
-  // MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
+  MDBBtn,
 
   // MDBIcon,
 } from "mdbreact";
@@ -28,7 +28,13 @@ class Navbar extends Component {
 
   render() {
     const show = this.state.menu ? "show" : "";
-    // const { activePath } = appContext
+
+    const scrollWithOffset = (el) => {
+      const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+      const yOffset = -50;
+      window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+    };
+
     return (
       <MDBNavbar
         className="nav-z-index sticky-top"
@@ -36,11 +42,6 @@ class Navbar extends Component {
         dark
         expand="md"
       >
-        {/* <MDBNavbarBrand>
-            <strong>
-              <img src={Logo} alt="blue mr logo png"></img>
-            </strong>
-          </MDBNavbarBrand> */}
         <MDBNavbarToggler onClick={this.toggleMenu} />
         <MDBCollapse
           className={"collapse navbar-collapse " + show}
@@ -49,22 +50,48 @@ class Navbar extends Component {
           navbar
         >
           <MDBNavbarNav center>
-            {/* https://mdbootstrap.com/support/react/how-to-change-mdnavbar-item-to-active-dynamically/ */}
-            {/* add active highlight after setting up context by putting active={activePath === "/home"} in the following <MDBNavItem> tag*/}
             <MDBNavItem>
-              <MDBNavLink to="/">Home</MDBNavLink>
+              <Link smooth={true} to="#landing">
+                <MDBBtn color="elegant" size="lg">
+                  Home
+                </MDBBtn>
+              </Link>
             </MDBNavItem>
-            {/* add active highlight after setting up context by putting active={activePath === "/profile"} in the following <MDBNavItem> tag*/}
+
             <MDBNavItem>
-              <MDBNavLink to="/profile">Profile</MDBNavLink>
+              <Link
+                smooth={true}
+                to="#profile"
+                scroll={(el) => scrollWithOffset(el)}
+              >
+                <MDBBtn color="elegant" size="lg">
+                  Profile
+                </MDBBtn>
+              </Link>
             </MDBNavItem>
-            {/* add active highlight after setting up context by putting active={activePath === "/portfolio"} in the following <MDBNavItem> tag*/}
+
             <MDBNavItem>
-              <MDBNavLink to="/portfolio">Portfolio</MDBNavLink>
+              <Link
+                smooth={true}
+                to="#portfolio"
+                scroll={(el) => scrollWithOffset(el)}
+              >
+                <MDBBtn color="elegant" size="lg">
+                  Portfolio
+                </MDBBtn>
+              </Link>
             </MDBNavItem>
-            {/* add active highlight after setting up context by putting active={activePath === "/contact"} in the following <MDBNavItem> tag*/}
+
             <MDBNavItem>
-              <MDBNavLink to="/contact">Contact</MDBNavLink>
+              <Link
+                smooth={true}
+                to="#contact"
+                scroll={(el) => scrollWithOffset(el)}
+              >
+                <MDBBtn color="elegant" size="lg">
+                  Contact
+                </MDBBtn>
+              </Link>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
