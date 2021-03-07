@@ -22,7 +22,7 @@ const ProfilePage = () => {
                 work with people and be creative - I was surprised when
                 programming kept coming up during my Google searches.
               </p>
-              <p className="dark-text">
+              <p>
                 At first I thought programmers sat in a dark room alone to work
                 - I was surprised how important teamwork is to being a
                 successful programmer. I was also surprised at how creative a
@@ -30,7 +30,7 @@ const ProfilePage = () => {
                 and that with programming, you can create almost anything you
                 can think of.
               </p>
-              <p className="dark-text">
+              <p>
                 The more I read, the more interested I became. After researching
                 schools, I decided UNH was the place for me and I haven't
                 regretted it once since writing my first line of code, "HELLO
@@ -39,10 +39,8 @@ const ProfilePage = () => {
             </MDBCol>
           </MDBRow>
           <MDBRow>
-            <h5 className="dark-text">
-              Technologies I've used to build modern websites:
-            </h5>
-            <MDBTable small responsive>
+            <h4>Technologies I've used to build modern websites:</h4>
+            <MDBTable id="techTable" small responsive>
               <MDBTableBody>
                 <tr className="text-center">
                   <td>MongoDB</td>

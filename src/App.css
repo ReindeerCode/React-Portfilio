@@ -42,10 +42,6 @@
 /*** ------------ End Landing Page --------------------------*/
 
 /*** ------------ Jumbotron component ------------------------*/
-.display-1 {
-  color: orange;
-  /* font-weight: bold; */
-}
 
 .transparent {
   background-color: transparent;
@@ -55,11 +51,6 @@
   backdrop-filter: contrast(40%);
   backdrop-filter: drop-shadow(4px 4px 10px blue);
 }
-
-/* .dark-text,
-td {
-  color: black;
-} */
 
 /*** ------------ End Jumbotron component ---------------------*/
 /*** ------------- Typed Text --------------------------------*/
@@ -105,8 +96,13 @@ td {
 /*** ------------ End Particles  ------------------------------*/
 
 /*** ----------------- Profile --------------------------------*/
+
+#techTable {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 #profile {
-  padding-top: 6rem;
+  padding: 6rem;
   padding-bottom: 6rem;
 }
 .headShot {
@@ -186,6 +182,10 @@ td {
 /*** ----------------- End Portfolio ---------------------------*/
 
 /*** ----------------- Contact -------------------------------*/
+.display-1 {
+  color: orange;
+  /* font-weight: bold; */
+}
 /* #contact {
   margin-top: 7rem;
 } */
