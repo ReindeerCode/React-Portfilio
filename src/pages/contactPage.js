@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 
+const {
+  REACT_APP_SERVICE_ID,
+  REACT_APP_TEMPLATE_ID,
+  REACT_APP_USER_ID,
+} = process.env;
+
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const { register, handleSubmit, errors } = useForm();
 
-  const serviceID = "service_ID";
-  const templateID = "template_ID";
-  const userID = "user_2uccGaibF99iCzhT6xdeW";
+  const serviceID = `${REACT_APP_SERVICE_ID}`;
+  const templateID = `${REACT_APP_TEMPLATE_ID}`;
+  const userID = `${REACT_APP_USER_ID}`;
 
   const onSubmit = (data, r) => {
     sendEmail(
