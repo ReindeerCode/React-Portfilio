@@ -41,7 +41,7 @@ const ProfilePage = () => {
           <MDBRow id="techTable">
             <MDBContainer>
               <h4>Technologies I've used to build modern websites:</h4>
-              <MDBTable id="techTable" small responsive>
+              <MDBTable small responsive>
                 <MDBTableBody>
                   <tr className="text-center">
                     <td>MongoDB</td>
