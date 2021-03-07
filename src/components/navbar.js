@@ -12,6 +12,11 @@ import {
   // MDBIcon,
 } from "mdbreact";
 
+const openSiteNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -89,6 +94,19 @@ class Navbar extends Component {
               >
                 <MDBBtn color="elegant" size="lg">
                   Contact
+                </MDBBtn>
+              </Link>
+            </MDBNavItem>
+            <MDBNavItem>
+              <Link
+                onClick={() =>
+                  openSiteNewTab(
+                    "https://docs.google.com/document/d/1IQGl7PdqC_oVQId9BZWZoE9P7djlfTeX7GLcdvBoPGo/edit?usp=sharing"
+                  )
+                }
+              >
+                <MDBBtn color="elegant" size="lg">
+                  Resume
                 </MDBBtn>
               </Link>
             </MDBNavItem>
