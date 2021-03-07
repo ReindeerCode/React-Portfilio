@@ -5,7 +5,6 @@ import {
   MDBNavbar,
   MDBNavbarNav,
   MDBNavItem,
-  MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
   MDBBtn,
@@ -51,7 +50,7 @@ class Navbar extends Component {
         >
           <MDBNavbarNav center>
             <MDBNavItem>
-              <Link smooth={true} to="#landing">
+              <Link smooth={true} to="#top">
                 <MDBBtn color="elegant" size="lg">
                   Home
                 </MDBBtn>

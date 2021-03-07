@@ -38,36 +38,38 @@ const ProfilePage = () => {
               </p>
             </MDBCol>
           </MDBRow>
-          <MDBRow>
-            <h4>Technologies I've used to build modern websites:</h4>
-            <MDBTable id="techTable" small responsive>
-              <MDBTableBody>
-                <tr className="text-center">
-                  <td>MongoDB</td>
-                  <td>Express.JS</td>
-                  <td>React.JS</td>
-                  <td>Node.JS</td>
-                </tr>
-                <tr className="text-center">
-                  <td>HTML</td>
-                  <td>XML</td>
-                  <td>CSS</td>
-                  <td>Bootstrap</td>
-                </tr>
-                <tr className="text-center">
-                  <td>MDBootstrap</td>
-                  <td>UI/UX Design</td>
-                  <td>JavaScript</td>
-                  <td>jQuery</td>
-                </tr>
-                <tr className="text-center">
-                  <td>JSON</td>
-                  <td>API</td>
-                  <td>MySQL</td>
-                  <td>NPM</td>
-                </tr>
-              </MDBTableBody>
-            </MDBTable>
+          <MDBRow id="techTable">
+            <MDBContainer>
+              <h4>Technologies I've used to build modern websites:</h4>
+              <MDBTable id="techTable" small responsive>
+                <MDBTableBody>
+                  <tr className="text-center">
+                    <td>MongoDB</td>
+                    <td>Express.JS</td>
+                    <td>React.JS</td>
+                    <td>Node.JS</td>
+                  </tr>
+                  <tr className="text-center">
+                    <td>HTML</td>
+                    <td>XML</td>
+                    <td>CSS</td>
+                    <td>Bootstrap</td>
+                  </tr>
+                  <tr className="text-center">
+                    <td>MDBootstrap</td>
+                    <td>UI/UX Design</td>
+                    <td>JavaScript</td>
+                    <td>jQuery</td>
+                  </tr>
+                  <tr className="text-center">
+                    <td>JSON</td>
+                    <td>API</td>
+                    <td>MySQL</td>
+                    <td>NPM</td>
+                  </tr>
+                </MDBTableBody>
+              </MDBTable>
+            </MDBContainer>
           </MDBRow>
         </MDBContainer>
       </div>
