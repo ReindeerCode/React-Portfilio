@@ -87,7 +87,7 @@
 /*** ------------ End contactBTN component  -------------------*/
 
 /*** ----------------- Particles ------------------------------*/
-.tsparticles-canvas-el {
+.particles-canvas {
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -99,6 +99,7 @@
 
 #techTable {
   background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 1rem;
 }
 
 #profile {
