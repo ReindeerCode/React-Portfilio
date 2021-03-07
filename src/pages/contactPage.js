@@ -49,11 +49,11 @@ const Contact = () => {
         <video src="/contactVid.mp4" autoPlay loop muted />
         <div id="contact" className="text-center">
           <h1 className="display-1">
-            contact me
+            Contact Me
             <span className="typed-text">@ MJRudolph86@gmail.com</span>
           </h1>
           <p>
-            or fill out the fancy form below and I'll get back to you as soon as
+            Or fill out the fancy form below and I'll get back to you as soon as
             possible.
           </p>
           <span className="success-message">{successMessage}</span>
