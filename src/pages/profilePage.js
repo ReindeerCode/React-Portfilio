@@ -20,7 +20,7 @@ const ProfilePage = () => {
                 management. About a year ago I decided to move on and find
                 something new, but what, I didn't know. I knew I still wanted to
                 work with people and be creative - I was surprised when
-                programming kept coming up during my Google searches.
+                programming kept coming up during my Google career searches.
               </p>
               <p style={{ wordSpacing: ".0.25em" }}>
                 At first I thought a programmer sat in a dark room alone to work
