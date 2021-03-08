@@ -51,7 +51,7 @@ const Landing = () => {
             />
           </MDBContainer>
           <button
-            className="btn-main-offer contact-btn1 btn btn-outline-warning"
+            className="btn-main-offer welcome-btn btn btn-outline-warning"
             type="submit"
             onClick={() => openSiteNewTab("https://github.com/ReindeerCode")}
           >
