@@ -140,7 +140,7 @@
 
 .portfolio h1 {
   color: orange;
-  padding: 3rem 0;
+  padding-top: 3rem;
 }
 
 .portfolio-content {
@@ -165,7 +165,7 @@
 .carousel .slide img {
   height: 30rem !important;
   width: 45rem !important;
-  padding-top: 6%;
+  padding-top: auto;
 }
 
 .carousel .slide {

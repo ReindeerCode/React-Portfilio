@@ -2,6 +2,7 @@ import React from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import vaguecation from "../assets/vaguecation.png";
 import employee_direct from "../assets/employee_direct.png";
 import budget_dashboard from "../assets/budget_dashboard.png";
 import workout_dashboard from "../assets/workout_dashboard.png";
@@ -31,11 +32,47 @@ const PortfolioCarousel = () => {
             <MDBCol md="6">
               <button
                 onClick={() =>
+                  openSiteNewTab("https://vaguecation.herokuapp.com/")
+                }
+                className="btn-main-offer contact-btn1 btn btn-outline-warning mt-5 "
+                type="submit"
+              >
+                Deployed Site
+              </button>
+            </MDBCol>
+
+            <MDBCol md="6">
+              <button
+                onClick={() =>
+                  openSiteNewTab("https://github.com/ReindeerCode/Vaguecation")
+                }
+                className="btn-main-offer contact-btn1 btn btn-outline-warning mt-5"
+                type="submit"
+              >
+                GitHub Repo
+              </button>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+        <img src={vaguecation} alt="Vaguecation home page" />
+        <div className="myCarousel">
+          <h3>Vaguecation</h3>
+          <p>
+            A website for people who want to go on a vacation but hate planning.
+          </p>
+        </div>
+      </>
+      <>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol md="6">
+              <button
+                onClick={() =>
                   openSiteNewTab(
                     "https://new-react-employee-directory.herokuapp.com/"
                   )
                 }
-                className="btn-main-offer contact-btn1 btn btn-outline-warning mt-5"
+                className="btn-main-offer contact-btn1 btn btn-outline-warning mt-5 "
                 type="submit"
               >
                 Deployed Site
